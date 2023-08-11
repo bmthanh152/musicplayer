@@ -84,6 +84,12 @@ const app = {
             path: './assets/music/song9.mp3',
             image: './assets/image/song9.jpg'
         },
+        {
+            name: 'Đoạn kết mới',
+            singer: 'Hoàng Dũng',
+            path: './assets/music/song10.mp3',
+            image: './assets/image/song10.jpg'
+        },
     ],
     
     render: function(){
