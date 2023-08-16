@@ -20,7 +20,7 @@ const prevBtn = $('.btn-prev');
 const randomBtn = $('.btn-random');
 const repeatBtn = $('.btn-repeat');
 const playlist = $('.playlist');
-const sound = $('#volume');
+const sound = $('.volume-control');
 
 const app = {
     currentIndex: 0,
@@ -90,6 +90,79 @@ const app = {
             path: './assets/music/song10.mp3',
             image: './assets/image/song10.jpg'
         },
+        {
+            name: 'Hẹn gặp em dưới ánh trăng',
+            singer: 'HIEUTHUHAI, HURRYKNG, MANBO',
+            path: './assets/music/song11.mp3',
+            image: './assets/image/song11.jpg'
+        },
+        {
+            name: 'Qúa khứ còn lại gì',
+            singer: 'HippoHappy',
+            path: './assets/music/song12.mp3',
+            image: './assets/image/song12.jpg'
+        },
+        {
+            name: 'Phiêu bồng',
+            singer: 'Tofu',
+            path: './assets/music/song13.mp3',
+            image: './assets/image/song13.jpg'
+        },
+        {
+            name: 'HongKong1',
+            singer: 'Nguyễn Trọng Tài',
+            path: './assets/music/song14.mp3',
+            image: './assets/image/song14.jpg'
+        },
+        {
+            name: 'Hương Hồng Hoa',
+            singer: 'TOfu',
+            path: './assets/music/song15.mp3',
+            image: './assets/image/song15.jpg'
+        },
+        {
+            name: 'Nàng',
+            singer: 'Nghi',
+            path: './assets/music/song17.mp3',
+            image: './assets/image/song17.jpg'
+        },
+        {
+            name: 'À Lôi',
+            singer: 'DOUBLE2T x MASEW',
+            path: './assets/music/song19.mp3',
+            image: './assets/image/song19.jpg'
+        },
+        {
+            name: 'Anh không cố ý',
+            singer: 'Ogenus & Limitlxss',
+            path: './assets/music/song18.mp3',
+            image: './assets/image/song18.jpg'
+        },
+        {
+            name: 'Mùa hè tuyệt vời',
+            singer: 'Đức Phúc x Tăng Duy Tân',
+            path: './assets/music/song21.mp3',
+            image: './assets/image/song21.jpg'
+        },
+        {
+            name: 'Ngõ chạm',
+            singer: 'Bigdaddy x emily',
+            path: './assets/music/song20.mp3',
+            image: './assets/image/song20.jpg'
+        },
+        {
+            name: 'Cô đơn trên sofa',
+            singer: 'Trung Quân',
+            path: './assets/music/song22.mp3',
+            image: './assets/image/song22.jpg'
+        },
+        {
+            name: 'Waiting for you',
+            singer: 'Mono',
+            path: './assets/music/song23.mp3',
+            image: './assets/image/song23.jpg'
+        },
+
     ],
     
     render: function(){
@@ -178,8 +251,10 @@ const app = {
 
         //Tăng giảm âm lượng
         sound.oninput = function(e) {
-            audio.volume = e.target.value
+            audio.volume = e.target.value;
+            
         }
+
 
         //Xử lý khi tua bài hát
         progress.onchange = function(e) {
@@ -220,6 +295,7 @@ const app = {
             repeatBtn.classList.toggle('active');
         }
 
+        
         //Khi kết thúc bài hát
         audio.onended = function() {
             if(_this.isRepeat){
@@ -299,6 +375,8 @@ const app = {
         this.currentIndex = randomNumberSong;
         this.loadCurrentSong();
     },
+
+    //
 
 
 
