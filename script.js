@@ -97,7 +97,7 @@ const app = {
             image: './assets/image/song11.jpg'
         },
         {
-            name: 'Qúa khứ còn lại gì',
+            name: 'Quá khứ còn lại gì',
             singer: 'HippoHappy',
             path: './assets/music/song12.mp3',
             image: './assets/image/song12.jpg'
@@ -116,7 +116,7 @@ const app = {
         },
         {
             name: 'Hương Hồng Hoa',
-            singer: 'TOfu',
+            singer: 'Tofu',
             path: './assets/music/song15.mp3',
             image: './assets/image/song15.jpg'
         },
